@@ -155,10 +155,10 @@ h2{color: #FFFFFF; font-weight: 400; text-align: center; font-size:42px;}
   }
   40% {
     opacity: 0.5;
-    box-shadow: 0 0 0 5px #D3D3D3, 0 0 10px 10px #D3D3D3, 0 0 0 10px #D3D3D3;
+    box-shadow: 0 0 0 5px #ffff00, 0 0 10px 10px #ffff00, 0 0 0 10px #ffff00;
   }
   100% {
-    box-shadow: 0 0 0 5px #D3D3D3, 0 0 10px 10px #D3D3D3, 0 0 0 10px #D3D3D3;
+    box-shadow: 0 0 0 5px #ffff00, 0 0 10px 10px #ffff00, 0 0 0 10px #ffff00;
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
     opacity: 0;
