@@ -1,1 +1,1 @@
-# Ninja
+# Ganpath
