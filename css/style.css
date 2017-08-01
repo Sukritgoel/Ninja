@@ -23,7 +23,7 @@ body {
 
 /*INPUT STYLE*/
 input {
-  background-color: #ffff00;
+  background-color: #D3D3D3;
   border: 0;
   color: #000000;
   font-family: "Titillium Web";
@@ -37,8 +37,8 @@ input:active, input:focus {
   outline: 1px solid #48788B;
 }
 .input-block{
-  background: #ffff00;
-  border:1px solid #ffff00;
+  background: #D3D3D3;
+  border:1px solid #D3D3D3;
   height: 70px;
   border-radius: 40px;
   width: 600px;
@@ -54,8 +54,8 @@ input:active, input:focus {
 
 /*BUTTON STYLE*/
 .btn {
-  background-color: #D3D3D3;
-  border: 0px solid #D3D3D3;
+  background-color: #ffff00;
+  border: 0px solid #ffff00;
   color: #000000;
   cursor: pointer;
   display: inline-block;
@@ -140,10 +140,10 @@ h2{color: #FFFFFF; font-weight: 400; text-align: center; font-size:42px;}
   }
   40% {
     opacity: 0.5;
-    box-shadow: 0 0 0 5px #D3D3D3, 0 0 10px 10px #D3D3D3, 0 0 0 10px #D3D3D3;
+    box-shadow: 0 0 0 5px #ffff00, 0 0 10px 10px #ffff00, 0 0 0 10px #ffff00;
   }
   100% {
-    box-shadow: 0 0 0 5px #D3D3D3, 0 0 10px 10px #D3D3D3, 0 0 0 10px #D3D3D3;
+    box-shadow: 0 0 0 5px #ffff00, 0 0 10px 10px #ffff00, 0 0 0 10px #ffff00;
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
     opacity: 0;
