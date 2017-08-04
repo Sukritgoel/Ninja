@@ -254,7 +254,7 @@ function prepareResponse(val) {
 
       var subString1 = "here";
       var subString2 = "loading";
-     // var subString3 = "here";
+      var subString3 = "displaying";
       var subString4 = "welcome";
       var subString5 = "that";
 
