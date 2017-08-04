@@ -63,7 +63,7 @@ $(document).ready(function() {
 
 });
 
-function findImageURL(text) {
+/*function findImageURL(text) {
 
       console.log("TEXT IS : " + text);
       var arr = text.split(" ");
@@ -77,7 +77,7 @@ function findImageURL(text) {
 }
 
 /*** FUNCTION TO DISPLAY APPROPRIATE IMAGE ON THE MODAL ***/
-function displayImage(imageUrl) {
+/*function displayImage(imageUrl) {
 
       modal.style.display = "block";
       console.log("CLICKED");
@@ -132,7 +132,7 @@ window.onkeydown = function() {
       videoUrl+=".webm";
       modalVid.src = "videos/"+videoUrl;
       /** Video will play after three seconds **/
-      setTimeout(function() {
+      /*setTimeout(function() {
             document.getElementById('vid01').play();
             console.log("video played");
       }, 3000) ;
