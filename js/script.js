@@ -9,20 +9,20 @@ var accessToken = "6167d3529aad44ab93de131a44ef07a1",
       messageCouldntHear = "Do I really have to?",
       messageInternalError = "Oh no, there has been an internal server error",
       messageSorry = "You really make me work";
-var modal;
-var modalImg;
-var captionText;
-var modal2;
-var modalVid;
-var modal3, modal4;
-var modal5, modal6, modal7, modal8;
+//var modal;
+//var modalImg;
+//var captionText;
+//var modal2;
+//var modalVid;
+//var modal3, modal4;
+//var modal5, modal6, modal7, modal8;
 var msg;
-var check = false;
+//var check = false;
 
 $(document).ready(function() {
 
       /*** FUNCTION TO DISPLAY APPROPRIATE IMAGE ON THE MODAL ***/
-      modal = document.getElementById('myModal');
+      /*modal = document.getElementById('myModal');
       modal2 = document.getElementById('myModal2');
       modal3 = document.getElementById('myModal3');
       modal4 = document.getElementById('myModal4');
@@ -30,9 +30,9 @@ $(document).ready(function() {
       modal6 = document.getElementById('myModal6');
       modal7 = document.getElementById('myModal7');
       modal8 = document.getElementById('myModal8');  
-      modalImg = document.getElementById("img01"); /** getting id of the modal Image **/
-      modalVid = document.getElementById("vid01"); /** getting id of the modal Video **/
-      captionText = document.getElementById("caption"); /** to display the caption inside the modal **/
+      modalImg = document.getElementById("img01"); 
+      modalVid = document.getElementById("vid01");
+      captionText = document.getElementById("caption"); */
 
       //PREPARE VOICE
       msg = new SpeechSynthesisUtterance();
@@ -94,24 +94,24 @@ window.onkeydown = function() {
       if (keyCode == 116 || keyCode == 27) {
             event.preventDefault();
             document.querySelector('video').src = "";
-            modal.style.display = "none";
+            /*modal.style.display = "none";
             modal2.style.display = "none";
             modal3.style.display = "none";
             modal4.style.display = "none";
             modal5.style.display = "none";
             modal6.style.display = "none";
             modal7.style.display = "none";
-            modal8.style.display = "none";
+            modal8.style.display = "none";*/
       }
-      if (keyCode == 33) {
+      /*if (keyCode == 33) {
             document.getElementById('vid01').pause();
       }
       if (keyCode == 34) {
             document.getElementById('vid01').play();
-      }
+      }*/
 }
 
-function findVideoURL(text) {
+/* function findVideoURL(text) {
 
       console.log("TEXT IS : " + text);
       var arr = text.split(" ");
@@ -122,10 +122,10 @@ function findVideoURL(text) {
       var videoValue = arr[1]+arr[2];
       console.log("IMAGE VALUE " + videoValue);
       displayVideo.call(this, videoValue);
-}
+}*/
 
 /*** FUNCTION TO DISPLAY APPROPRIATE IMAGE ON THE MODAL ***/
-function displayVideo(videoUrl) {
+/*function displayVideo(videoUrl) {
 
       modal2.style.display = "block";
       console.log("CLICKED again");
@@ -136,9 +136,9 @@ function displayVideo(videoUrl) {
             document.getElementById('vid01').play();
             console.log("video played");
       }, 3000) ;
-}
+}*/
 
-//POWERPOINT 1
+/*POWERPOINT 1
 function showPpt(text) {
 
       if(text == "welcome to my digital world!"){
@@ -165,7 +165,7 @@ function showPpt(text) {
             modal8.style.display = "block";
             console.log("CLICKED again and again");
       };
-}
+} */
 
 //ALL CODE FROM HERE ON IS NOT TO BE EDITED AS IT IS WHAT CONNECTS US TO API.AI
 function startRecognition() {
@@ -252,7 +252,7 @@ function prepareResponse(val) {
       console.log("SPOKEN RESPONSE IS : " + spokenResponse);
       console.log("SPOKEN RESPONSE IS : " + val.result.speech);
 
-      var subString1 = "alright";
+      /*var subString1 = "alright";
       var subString2 = "loading";
       var subString3 = "displaying";
       var subString4 = "welcome";
@@ -295,7 +295,7 @@ function prepareResponse(val) {
             console.log("ppt not found ");
             //check = false;
             //console.log(check);
-      };
+      };*/
 
       respond(spokenResponse);
       debugRespond(debugJSON);
@@ -310,16 +310,16 @@ function respond(val) {
             val = messageSorry;
       }
       if (val !== messageRecording) {
-            console.log(check);
+            /*console.log(check);
             if(check === true){
                   msg.text = "Here you go sir"
             };
             if(check === false){
                   msg.text = val;
-            };
+            };*/
             //msg.text = val;
             window.speechSynthesis.speak(msg);
-            check = false;
+            //check = false;
       };
       $("#spokenResponse").addClass("is-active").find(".spoken-response__text").html(val);
 }
