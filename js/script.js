@@ -249,9 +249,9 @@ function prepareResponse(val) {
       console.log("SPOKEN RESPONSE IS : " + spokenResponse);
       console.log("SPOKEN RESPONSE IS : " + val.result.speech);
 
-      var subString1 = "displaying";
+      var subString1 = "here";
       var subString2 = "loading";
-      var subString3 = "here";
+     // var subString3 = "here";
       var subString4 = "welcome";
       var subString5 = "that";
 
