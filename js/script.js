@@ -94,24 +94,24 @@ window.onkeydown = function() {
       if (keyCode == 116 || keyCode == 27) {
             event.preventDefault();
             document.querySelector('video').src = "";
-            /*modal.style.display = "none";
+            modal.style.display = "none";
             modal2.style.display = "none";
             modal3.style.display = "none";
             modal4.style.display = "none";
             modal5.style.display = "none";
             modal6.style.display = "none";
             modal7.style.display = "none";
-            modal8.style.display = "none";*/
+            modal8.style.display = "none";
       }
-      /*if (keyCode == 33) {
+      if (keyCode == 33) {
             document.getElementById('vid01').pause();
       }
       if (keyCode == 34) {
             document.getElementById('vid01').play();
-      }*/
+      }
 }
 
-/* function findVideoURL(text) {
+function findVideoURL(text) {
 
       console.log("TEXT IS : " + text);
       var arr = text.split(" ");
@@ -136,9 +136,9 @@ window.onkeydown = function() {
             document.getElementById('vid01').play();
             console.log("video played");
       }, 3000) ;
-}*/
+}
 
-/*POWERPOINT 1
+//POWERPOINT 1
 function showPpt(text) {
 
       if(text == "welcome to my digital world!"){
