@@ -83,6 +83,9 @@ function displayImage(imageUrl) {
       console.log("CLICKED");
       imageUrl+=".jpg";
       modalImg.src = "images/"+imageUrl;
+      setTimeout(function() {
+            modal.style.display = "none";
+      }, 10000);
 }
 
 // When the user clicks on the clicker, close any modal
