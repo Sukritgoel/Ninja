@@ -256,12 +256,12 @@ function prepareResponse(val) {
       var subString2 = "loading";
       var subString3 = "displaying";
       var subString4 = "welcome";
-      var subString5 = "that";
+      var subString5 = "that";*/
 
       var text = spokenResponse.toLowerCase();
       console.log(" TEXT TO CHECK : " +text);
-
-      //IMAGE  
+      
+      /*IMAGE  
       if (text.indexOf(subString1) != -1) {
             console.log("display found ");
             findImageURL.call(this,text);
@@ -317,7 +317,7 @@ function respond(val) {
             if(check === false){
                   msg.text = val;
             };*/
-            //msg.text = val;
+            msg.text = val;
             window.speechSynthesis.speak(msg);
             //check = false;
       };
