@@ -37,7 +37,7 @@ $(document).ready(function() {
       //PREPARE VOICE
       msg = new SpeechSynthesisUtterance();
       // msg.default = 'True';
-      msg.URI = 'native';
+     // msg.URI = 'native';
      // msg.lang = "en-US";
       // msg.rate = 0.9;
 
@@ -319,7 +319,8 @@ function respond(val) {
             };*/
             msg.text = val;
             // msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == ''; })[0];
-            window.speechSynthesis.speak(msg);
+            // window.speechSynthesis.speak(msg);
+            window.speechSynthesis(msg);
             
             //check = false;
       };
