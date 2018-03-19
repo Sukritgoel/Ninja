@@ -35,11 +35,12 @@ $(document).ready(function() {
       captionText = document.getElementById("caption"); */
 
       //PREPARE VOICE
+      var voices = window.speechSynthesis.getVoices();
       msg = new SpeechSynthesisUtterance();
       msg.default;
       //msg.URI = 'native';
       msg.lang = "en-US";
-      var voices = window.speechSynthesis.getVoices();
+    
       msg.voice = voices[3];
       msg.rate = 0.9;
 
