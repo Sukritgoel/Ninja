@@ -41,7 +41,9 @@ $(document).ready(function() {
       msg.URI = 'native';
       msg.lang = "en-US";
       msg.rate = 0.9;
-     
+      speechSynthesis.getVoices().forEach(function(voice) {
+      console.log(voice.name, voice.default ? voice.default :'');
+      });
       $speechInput = $("#speech");
       $recBtn = $("#rec");
 
