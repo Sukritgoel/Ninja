@@ -50,7 +50,7 @@ window.speechSynthesis.onvoiceschanged = function(e) {
   console.log(voice.name);
 });
       
-      var voices = window.speechSynthesis.getVoices();
+      var voicelist = window.speechSynthesis.getVoices();
       
 
       $speechInput = $("#speech");
@@ -329,7 +329,7 @@ function respond(val) {
                   msg.text = val;
             };*/
             msg.text = val;
-            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voices[1]; })[0];
+            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voicelist[0]; })[0];
             window.speechSynthesis.speak(msg);
                         
             //check = false;
