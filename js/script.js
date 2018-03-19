@@ -337,7 +337,7 @@ function respond(val) {
             //} else {
             //msg.voice = voicelist[1];
             //};
-            msg.voice = voicelist[1];
+            // msg.voice = voicelist[1];
             window.speechSynthesis.speak(msg);
                         
             //check = false;
