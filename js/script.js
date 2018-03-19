@@ -39,6 +39,8 @@ $(document).ready(function() {
       msg.default;
       //msg.URI = 'native';
       msg.lang = "en-US";
+      var voices = window.speechSynthesis.getVoices();
+      msg.voice = voices[3];
       msg.rate = 0.9;
 
       $speechInput = $("#speech");
