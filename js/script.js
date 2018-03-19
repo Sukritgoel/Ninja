@@ -36,10 +36,10 @@ $(document).ready(function() {
 
       //PREPARE VOICE
       msg = new SpeechSynthesisUtterance();
-      msg.default = 'True';
+      // msg.default = 'True';
       msg.URI = 'native';
-      msg.lang = "en-US";
-      msg.rate = 0.9;
+     // msg.lang = "en-US";
+      // msg.rate = 0.9;
 
 
       $speechInput = $("#speech");
