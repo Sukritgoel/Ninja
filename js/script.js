@@ -16,7 +16,7 @@ var accessToken = "6167d3529aad44ab93de131a44ef07a1",
 //var modalVid;
 //var modal3, modal4;
 //var modal5, modal6, modal7, modal8;
-// var msg;
+var msg;
 //var check = false;
 
 $(document).ready(function() {
@@ -35,7 +35,7 @@ $(document).ready(function() {
       captionText = document.getElementById("caption"); */
 
       //PREPARE VOICE
-   var msg = new SpeechSynthesisUtterance();
+msg = new SpeechSynthesisUtterance();
       msg.default;
      // msg.URI = 'native';
      msg.lang = "en-US";
