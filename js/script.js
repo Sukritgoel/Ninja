@@ -329,7 +329,7 @@ function respond(val) {
                   msg.text = val;
             };*/
             msg.text = val;
-            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voicelist[0]; })[0];
+            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'xxx'; })[0];
             window.speechSynthesis.speak(msg);
                         
             //check = false;
