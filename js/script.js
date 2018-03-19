@@ -37,12 +37,10 @@ $(document).ready(function() {
       //PREPARE VOICE
 msg = new SpeechSynthesisUtterance();
      // msg.default;
-     //msg.URI = 'native';
+     msg.voiceURI = 'native';
      msg.lang = "en-US";
      msg.rate = 0.9;
 
-      // Execute loadVoices.
-loadVoices();
 
 // Chrome loads voices asynchronously.
 window.speechSynthesis.onvoiceschanged = function(e) {
@@ -325,7 +323,7 @@ function respond(val) {
                   msg.text = val;
             };*/
             msg.text = val;
-            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'XXX'; })[0];
+            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Zira'; })[0];
             window.speechSynthesis.speak(msg);
                         
             //check = false;
