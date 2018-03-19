@@ -35,15 +35,13 @@ $(document).ready(function() {
       captionText = document.getElementById("caption"); */
 
       //PREPARE VOICE
-      var voices = window.speechSynthesis.getVoices();
       msg = new SpeechSynthesisUtterance();
       msg.default;
       msg.URI = 'native';
       msg.lang = "en-US";
       msg.rate = 0.9;
-      speechSynthesis.getVoices().forEach(function(voice) {
-      console.log(voice.name, voice.default ? voice.default :'');
-      });
+
+
       $speechInput = $("#speech");
       $recBtn = $("#rec");
 
