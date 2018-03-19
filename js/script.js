@@ -43,9 +43,9 @@ msg = new SpeechSynthesisUtterance();
 
 
 // Chrome loads voices asynchronously.
-window.speechSynthesis.onvoiceschanged = function(e) {
-  loadVoices();
-};
+//window.speechSynthesis.onvoiceschanged = function(e) {
+  //loadVoices();
+//};
       speechSynthesis.getVoices().forEach(function(voice) {
   console.log(voice.name);
 });
