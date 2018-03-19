@@ -37,8 +37,8 @@ $(document).ready(function() {
       //PREPARE VOICE
 msg = new SpeechSynthesisUtterance();
      // msg.default;
-     msg.voiceURI = 'native';
-     msg.lang = "en-GB";
+     // msg.voiceURI = 'native';
+     msg.lang = "en-US";
      msg.rate = 0.9;
 
 
@@ -323,7 +323,7 @@ function respond(val) {
                   msg.text = val;
             };*/
             msg.text = val;
-            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Zira'; })[0];
+            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Microsoft Zira Desktop'; })[0];
             window.speechSynthesis.speak(msg);
                         
             //check = false;
