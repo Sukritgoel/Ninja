@@ -41,6 +41,13 @@ msg = new SpeechSynthesisUtterance();
      msg.lang = "en-US";
      msg.rate = 0.9;
 
+      // Execute loadVoices.
+loadVoices();
+
+// Chrome loads voices asynchronously.
+window.speechSynthesis.onvoiceschanged = function(e) {
+  loadVoices();
+};
 
       $speechInput = $("#speech");
       $recBtn = $("#rec");
