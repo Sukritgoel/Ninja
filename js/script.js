@@ -38,12 +38,10 @@ $(document).ready(function() {
       var voices = window.speechSynthesis.getVoices();
       msg = new SpeechSynthesisUtterance();
       msg.default;
-      //msg.URI = 'native';
+      msg.URI = 'native';
       msg.lang = "en-US";
-    
-      msg.voice = voices[3];
       msg.rate = 0.9;
-
+     
       $speechInput = $("#speech");
       $recBtn = $("#rec");
 
@@ -302,8 +300,7 @@ function prepareResponse(val) {
 
       respond(spokenResponse);
       debugRespond(debugJSON);
-} /// accha hoga sorry
-
+} 
 function debugRespond(val) {
       $("#response").text(val); 
 }
@@ -321,7 +318,9 @@ function respond(val) {
                   msg.text = val;
             };*/
             msg.text = val;
+            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Whisper'; })[0];
             window.speechSynthesis.speak(msg);
+            
             //check = false;
       };
       $("#spokenResponse").addClass("is-active").find(".spoken-response__text").html(val);
