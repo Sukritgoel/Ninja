@@ -37,18 +37,18 @@ $(document).ready(function() {
       //PREPARE VOICE
 msg = new SpeechSynthesisUtterance();
      // msg.default;
-     msg.voiceURI = 'native';
-     msg.lang = "en-US";
-     msg.rate = 0.9;
+     // msg.voiceURI = 'native';
+     // msg.lang = "en-US";
+     // msg.rate = 0.9;
 
 
 // Chrome loads voices asynchronously.
-//window.speechSynthesis.onvoiceschanged = function(e) {
-  //loadVoices();
-//};
-      speechSynthesis.getVoices().forEach(function(voice) {
-  console.log(voice.name);
-});
+window.speechSynthesis.onvoiceschanged = function(e) {
+loadVoices();
+};
+  //speechSynthesis.getVoices().forEach(function(voice) {
+  //console.log(voice.name);
+//});
       
       var voicelist = window.speechSynthesis.getVoices();
       
