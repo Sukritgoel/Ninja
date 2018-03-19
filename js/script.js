@@ -318,7 +318,7 @@ function respond(val) {
                   msg.text = val;
             };*/
             msg.text = val;
-            // msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == ''; })[0];
+            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Heera'; })[0];
             window.speechSynthesis.speak(msg);
                         
             //check = false;
