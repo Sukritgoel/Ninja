@@ -17,7 +17,7 @@ var accessToken = "6167d3529aad44ab93de131a44ef07a1",
 //var modal3, modal4;
 //var modal5, modal6, modal7, modal8;
 var msg;
-var intent;
+//var intent = "Thanks";
 //var check = false;
 
 $(document).ready(function() {
@@ -262,7 +262,7 @@ function send() {
 function prepareResponse(val) {
       var debugJSON = JSON.stringify(val, undefined, 2),
       spokenResponse = val.result.speech;
-      intent = val.result.intentName;
+      //intent = val.result.intentName;
       console.log("SPOKEN RESPONSE IS : " + spokenResponse);
       console.log("SPOKEN RESPONSE IS : " + val.result.speech);
 
@@ -331,9 +331,10 @@ function respond(val) {
                   msg.text = val;
             };*/
             msg.text = val;
+            var pos = val.search("Amy");
             
-            if (intent == "5.  innovation in E Y India"){
-            msg.voice =voicelist[1];
+            if (pos == 0){
+            msg.voice =voicelist[2];
             }
             Else {
             msg.voice =voicelist[1];
