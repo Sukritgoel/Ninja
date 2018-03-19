@@ -330,13 +330,14 @@ function respond(val) {
                   msg.text = val;
             };*/
             msg.text = val;
-            var pos = val.search("Amy");
+            // var pos = val.search("Amy");
             
-            if (pos == 0){
-            msg.voice = voicelist[2];
-            } else {
+            //if (pos == 0){
+            //msg.voice = voicelist[2];
+            //} else {
+            //msg.voice = voicelist[1];
+            //};
             msg.voice = voicelist[1];
-            };
             window.speechSynthesis.speak(msg);
                         
             //check = false;
