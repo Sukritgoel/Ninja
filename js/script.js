@@ -46,6 +46,12 @@ msg = new SpeechSynthesisUtterance();
 window.speechSynthesis.onvoiceschanged = function(e) {
   loadVoices();
 };
+      speechSynthesis.getVoices().forEach(function(voice) {
+  console.log(voice.name);
+});
+      
+      var voices = window.speechSynthesis.getVoices();
+      
 
       $speechInput = $("#speech");
       $recBtn = $("#rec");
@@ -323,7 +329,7 @@ function respond(val) {
                   msg.text = val;
             };*/
             msg.text = val;
-            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == 'Alice'; })[0];
+            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voices[1]; })[0];
             window.speechSynthesis.speak(msg);
                         
             //check = false;
