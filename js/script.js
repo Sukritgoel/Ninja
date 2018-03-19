@@ -36,11 +36,11 @@ $(document).ready(function() {
       captionText = document.getElementById("caption"); */
 
       //PREPARE VOICE
-msg = new SpeechSynthesisUtterance();
-     // msg.default;
-     // msg.voiceURI = 'native';
-     // msg.lang = "en-US";
-     // msg.rate = 0.9;
+      msg = new SpeechSynthesisUtterance();
+      msg.default;
+      msg.voiceURI = 'native';
+      msg.lang = "en-US";
+      msg.rate = 0.9;
 
 
 // Chrome loads voices asynchronously.
@@ -51,7 +51,7 @@ loadVoices();
   //console.log(voice.name);
 //});
       
-      var voicelist = window.speechSynthesis.getVoices();
+     var voicelist = window.speechSynthesis.getVoices();
       
 
       $speechInput = $("#speech");
@@ -262,7 +262,6 @@ function send() {
 function prepareResponse(val) {
       var debugJSON = JSON.stringify(val, undefined, 2),
       spokenResponse = val.result.speech;
-      //intent = val.result.intentName;
       console.log("SPOKEN RESPONSE IS : " + spokenResponse);
       console.log("SPOKEN RESPONSE IS : " + val.result.speech);
 
@@ -334,11 +333,10 @@ function respond(val) {
             var pos = val.search("Amy");
             
             if (pos == 0){
-            msg.voice =voicelist[2];
-            }
-            Else {
-            msg.voice =voicelist[1];
-            }
+            msg.voice = voicelist[2];
+            } else {
+            msg.voice = voicelist[1];
+            };
             window.speechSynthesis.speak(msg);
                         
             //check = false;
