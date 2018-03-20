@@ -338,7 +338,7 @@ function respond(val) {
             //msg.voice = voicelist[1];
             //};
             // msg.voice = voicelist[1];
-            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == ""; })[0];
+            msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voicelist[1]; })[0];
             window.speechSynthesis.speak(msg);
                         
             //check = false;
